@@ -19,4 +19,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('bookmark/', BookmarkLV.as_view(), name='index'),
+    path('bookmark/</int:pk>/', BookmarkDV.as_view(), name='detail'),
 ]
